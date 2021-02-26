@@ -1,0 +1,6 @@
+.tablehead{
+    background-color: gray;
+}
+.tablehead:hover{background-color: blue;}
+.otherrow:nth-child(even){background-color: green;}
+.otherrow:hover:nth-child(odd){background-color: red;}

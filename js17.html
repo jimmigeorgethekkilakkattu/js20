@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let person={name:'jimmi',age:24,address:"23hh3323nyc"};
+      let student=Object.create(person);
+      console.log(student);  
+      student['rollno']=12;
+      console.log(student.name);
+      student.__proto__.name='john';
+      console.log(student);
+      console.log(student.name);
+      console.log(person);
+      /* Object.freeze(student);
+      console.log(Object.isFrozen(student));
+      student.batch='cse';
+      student.rollno=2;
+      console.log(student); */
+      Object.seal(student);
+      console.log(Object.isSealed(student));
+      student.batch='cse';
+      student.rollno=2;
+      console.log(student);
+/* const b=12;
+b=34; */
+      var a=100;
+      var  a=23;
+      for(var i of "hello"){
+          console.log(i);
+      }
+      console.log("*****************");
+      console.log(i);
+
+
+    </script>
+</body>
+</html>

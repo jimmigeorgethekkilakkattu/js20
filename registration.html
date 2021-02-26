@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="table.html" method="post">
+        <div><label for="">firstname</label></div>
+        <div> <input type="text" name="fname" required minlength="3" maxlength="5" placeholder="enter firstname"></div>
+        <div><label for="">lastname</label></div>
+        <div> <input type="text" name="lname" placeholder="enter last name"></div>
+        <div>
+            <label for="">email</label>
+        </div>
+        <div><input type="email" placeholder=" enter email"></div>
+        <div>
+            <select name="state">
+                <option value="kerala">kerala</option>
+                <option value="goa"> goa</option>
+                <option value="tamilnadu">tamilnadu</option>
+                <div>
+                <input type="radio" name="gender" value="male"> male
+                <input type="radio" name="gender" value="female"> female
+            </div>
+            <div>
+                <label for="">password</label>
+            </div>
+            <div><input type="password"name=password></div>
+            <div>
+                <label for="">age</label>
+            </div>
+            <input type="number" name="age" required min="18" max="30">
+
+
+            </select>
+        </div>
+        <div>
+            <input type="file">
+        </div>
+        <div>
+            <input type="date" value="date">
+        </div>
+        <div><img src="images/img1.jpg" alt="image not displayed" width="200" height="200"></div>
+        
+        <input type="submit" value="register">
+        
+
+
+    </form>
+</body>
+
+</html>

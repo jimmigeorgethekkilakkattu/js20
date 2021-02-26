@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={};
+        
+        obj.x=111;
+        obj.y=213;
+        console.log(obj);
+        console.log(typeof obj);
+        obj.show=function()
+        {
+            console.log(`x=${this.x}`);
+            console.log(`y=${this.y}`);
+        }
+        obj.show();
+        console.log("***********************************")
+        let person={Name:'jimmi',Age: 24 ,display:function(){
+            console.log(`Name=${this.Name}`);
+            console.log(`Age=${this.Age}`);
+
+
+        }};
+        console.log(person);
+        person.display();
+        console.log("***********************************");
+        let student={};
+        student.name='jimmi';
+        student.rollno=1;
+        student.mark=[25,35,45];
+        student.average=function(){
+            let total=0;
+            for(num of this.mark){
+
+                 total=total+num;
+                // console.log(total);
+                
+            }
+            let avr=total/this.mark.length;
+                console.log('average=',avr);
+
+        }
+        student.disp=function(){
+            console.log(`Name=${this.name}`);
+            console.log(`rollno=${this.rollno}`);
+            console.log(`mark=${this.mark}`);
+        }
+        
+        student.disp();
+        student.average();
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let names = ['jimmi', 'jithu', 'joel', 'dibi', 'arun', 'kiran'];
+        console.table(names);
+        console.log(names.slice(2, 5));
+        /*         using for each loop
+         */
+        for (element of names) {
+            console.log(element);
+        }
+        /*         using in
+         */
+        console.log("**************")
+        for (index in names) {
+            console.log(index);
+            console.log(names[index]);
+        }
+        /*         using foreach functiom
+         */
+        console.log("**************")
+        names.forEach((name) => {
+            console.log(name);
+
+        });
+        newarray=names.map((name)=>{
+return name.concat("*")
+        })
+        console.log(newarray)
+        let newarray2=names.filter((name)=>{
+            if(name.startsWith("k"))
+            {
+                return name;
+            }
+        })
+            console.log(newarray2);
+        let num_array=[9,11,10,4,7,8];
+        newnum_array=num_array.map((sqr)=>{
+return sqr**2
+        })
+        console.log(newnum_array)
+        /* using reduce */
+let result=num_array.reduce((x,y)=>{
+    console.log("x",x);
+    console.log("y",y);
+    return x+y;
+
+})
+console.log(result);
+/* using reduce right */
+console.log("**************")
+let result2=num_array.reduceRight((x,y)=>{
+    console.log("x",x);
+    console.log("y",y);
+    return x+y;
+
+})
+console.log(result2);
+/* sorting */
+/* console.log("**************")
+num_array.sort();
+console.log(num_array); */
+console.log("**************");
+num_array.reverse();
+console.log(num_array);
+    </script>
+
+</body>
+
+</html>

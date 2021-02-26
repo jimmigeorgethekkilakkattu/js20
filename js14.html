@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="p1">
+    </ul>
+    <script>
+        let names = ['jimmi', 'jithu', 'joel', 'dibi', 'arun', 'kiran'];
+       
+           
+           /* for (element of names)
+           {
+            let list= document.createElement("li");
+            list.innerText=element;
+            document.getElementById('p1').appendChild(list);
+           } */
+          let s="";
+          for(x of names)
+          {
+              s+=`<li> ${x} </li>`;
+          } 
+          document.getElementById('p1').innerHTML=s;
+          
+
+    </script>
+       
+
+</body>
+</html>

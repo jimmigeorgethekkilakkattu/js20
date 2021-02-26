@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var input="my phone number is 9562871085 and office number is (0484)-2245561 and fax number is 0484-2245902";
+        function check(){
+            let regex=/\d{10}|(((0484)-|0484-)\d{7})/g
+            alert(input.match(regex));
+        }
+       check();
+    </script>
+</body>
+</html>

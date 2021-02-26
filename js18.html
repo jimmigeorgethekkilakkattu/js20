@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check(){
+           // let regex=/\d{5}/g;
+           //let regex=/^[a-z]{3}\d{2}$/;
+          // let regex=/^[9][8][7]\d{7}$/
+         // let regex=/^(987|789)\d{7}$/g
+           // 987 or 789
+           //(987|789)
+          // let regex=/\d*/;
+          //let regex=/^\+91\s(987|789)\d{7}$/g
+          let regex=/^(\w|\W){1,}(@gmail.com|@yahoo.com)$/g
+
+let data=document.getElementById('data').value
+//matchfunction
+alert(data.match(regex));
+if(regex.test(data)){
+    alert("valid email id");
+}
+    else
+    {
+        alert("invalid email id")
+    }
+  
+        }
+
+    </script>
+    <input type="text" id='data'>
+<button onclick="check()">click</button>
+    
+</body>
+</html>
